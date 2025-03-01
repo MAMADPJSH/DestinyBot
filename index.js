@@ -8,12 +8,10 @@ const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildIntegrations],
 });
 
-// Replace this with your bot token
 console.log(process.env.TOKEN);
 const TOKEN = process.env.TOKEN;
-// Replace this with the path to your image file or a URL
 const DEFAULT_ICON =
-  "https://cdn.discordapp.com/icons/1094730877138907218/523c6c21a348782aa9159582260e03f6.webp"; // or 'https://example.com/image.png'
+  "https://cdn.discordapp.com/icons/1094730877138907218/523c6c21a348782aa9159582260e03f6.webp";
 
 client.once("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
